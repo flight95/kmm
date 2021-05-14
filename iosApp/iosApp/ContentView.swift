@@ -1,13 +1,11 @@
 import SwiftUI
-import shared
-
-func greet() -> String {
-    return Greeting().greeting()
-}
+import KMM
 
 struct ContentView: View {
+    let greet = Greeting().greeting()
+    
     var body: some View {
-        Text(greet())
+        Text(greet)
     }
 }
 
